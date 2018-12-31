@@ -1,5 +1,5 @@
 @echo off
-set "VIRTUAL_ENV=D:\Github\jimmyvo.python\env"
+set "VIRTUAL_ENV=D:\Github\Portfolio-GCP-Flask\env"
 
 if defined _OLD_VIRTUAL_PROMPT (
     set "PROMPT=%_OLD_VIRTUAL_PROMPT%"

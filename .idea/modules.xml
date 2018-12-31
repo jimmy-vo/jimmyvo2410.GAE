@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/jimmyvo.python.iml" filepath="$PROJECT_DIR$/.idea/jimmyvo.python.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Portfolio-GCP-Flask.iml" filepath="$PROJECT_DIR$/.idea/Portfolio-GCP-Flask.iml" />
     </modules>
   </component>
 </project>
