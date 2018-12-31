@@ -1,6 +1,6 @@
-﻿
-#configuration
+﻿#configuration
 $VERSION="20181230t012741"
+$PROJECT = "jimmyvo2410"
 $loc_project = "D:\Github\Portfolio-GCP-Flask"
 $loc_tmp = "Deploy"
 $loc_src_folders = @("static", "templates")
@@ -39,16 +39,11 @@ pip install -t lib -r requirements.txt
 # . env/bin/activate
 
 #start to deploy
-gcloud app deploy --stop-previous-version --project=jimmyvo2410 --version=$VERSION --quiet
+gcloud app deploy --stop-previous-version --project=$PROJECT --version=$VERSION --quiet
 
 #delete folder
 cd $loc_project
 Remove-Item -Recurse -Force -path $loc_tmp -ErrorAction SilentlyContinue
 
 #start to deploy
-gcloud app browse --project=jimmyvo2410
-
-
-
-
-
+gcloud app browse --project=$PROJECT
