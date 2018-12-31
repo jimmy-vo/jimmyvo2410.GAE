@@ -8,14 +8,14 @@ This is a demonstration of deploying a website on Google Cloud Platform using mu
   * Image preview tooltip when the mouse is hovering on an image.
   * Auto generate content from XML format.
   * Loading HTML fragment template using Jquery
-* Blog
 
 ## Demonstration:
 You can find a demonstration link from [here](https://jimmyvo2410.appspot.com/)
-* Profile: ![photo](https://github.com/jimmyvo2410/RrcNews/blob/master/doc/doc_Main.JPG)
-* Edit page: ![photo](https://github.com/jimmyvo2410/RrcNews/blob/master/doc/doc_Edit.JPG)
-* Login page: ![photo](https://github.com/jimmyvo2410/RrcNews/blob/master/doc/doc_Login.JPG)
-* Full-post page: ![photo](https://github.com/jimmyvo2410/RrcNews/blob/master/doc/doc_Full.JPG)
+* Google Cloud Platform Dashboard: ![photo](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/blob/master/doc/dashboard.JPG)
+* Profile: ![photo](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/blob/master/doc/profile.JPG)
+* Project: ![photo](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/blob/master/doc/project.JPG)
+* Contact: ![photo](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/blob/master/doc/contact.JPG)
+* Automate deployment process: ![photo](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/blob/master/doc/deploy.JPG)
 
 
 ## Deployment Instruction

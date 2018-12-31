@@ -52,3 +52,5 @@ while (Test-Path $loc_tmp) {
     echo "try to delete $loc_tmp"
     Remove-Item -Recurse -Force -path $loc_tmp -ErrorAction SilentlyContinue
 }
+
+Pause
