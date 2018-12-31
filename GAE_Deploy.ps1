@@ -46,11 +46,9 @@ gcloud app deploy --project=$PROJECT --version=$VERSION --quiet
 gcloud app browse --project=$PROJECT
 
 #delete folder
-cd ..
+cd $loc_project
 while (Test-Path $loc_tmp) { 
     Start-Sleep 1 
     echo "try to delete $loc_tmp"
     Remove-Item -Recurse -Force -path $loc_tmp -ErrorAction SilentlyContinue
 }
-
-Pause

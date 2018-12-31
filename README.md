@@ -11,8 +11,8 @@ This is a demonstration of deploying a website on Google Cloud Platform using mu
 * Blog
 
 ## Demonstration:
-You can find a demonstration link from [here](https://portfolio-227204.appspot.com/)
-* Main page: ![photo](https://github.com/jimmyvo2410/RrcNews/blob/master/doc/doc_Main.JPG)
+You can find a demonstration link from [here](https://jimmyvo2410.appspot.com/)
+* Profile: ![photo](https://github.com/jimmyvo2410/RrcNews/blob/master/doc/doc_Main.JPG)
 * Edit page: ![photo](https://github.com/jimmyvo2410/RrcNews/blob/master/doc/doc_Edit.JPG)
 * Login page: ![photo](https://github.com/jimmyvo2410/RrcNews/blob/master/doc/doc_Login.JPG)
 * Full-post page: ![photo](https://github.com/jimmyvo2410/RrcNews/blob/master/doc/doc_Full.JPG)
@@ -22,7 +22,7 @@ You can find a demonstration link from [here](https://portfolio-227204.appspot.c
 ### Prerequisites
  * Download and install the latest version of Pycharm: [Download](https://www.jetbrains.com/pycharm/) 
  * Create a new GCP project and App Engine application using the GCP Consoles
- * It is optional to download and install the Cloud SDK, or you can complete the following instruction with the GCP's Shell and editor 
+ * It is optional to download and install the Cloud SDK if you want to deploy it by PowerShell script; or you can complete the following instruction with the GCP's Shell and editor 
  
 ### Deploy locally using Pycharm
  * Open Pycharm 
@@ -32,7 +32,7 @@ You can find a demonstration link from [here](https://portfolio-227204.appspot.c
    * In Pycharm, select File > Settings.. 
    * In Settings, on the left pannel, select Project:BlogsDemo > Project Interpreter. Navigate to [env/Scripts/python.exe](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/blob/master/env/Scripts/python.exe)  
 
-### Deploy on Google Cloud Platform
+### Deploy on Google Cloud Platform using Google Cloud Shell
  * Open Cloud Shell
  * Create Demo folder on the Cloud Shell Editor
  * Copy the list of items to Demo folder:
@@ -64,12 +64,14 @@ You can find a demonstration link from [here](https://portfolio-227204.appspot.c
         ```
         . env/bin/activate
         ```
-        ```
     * Finally, Upload files to Google Cloud Storage
         ```
         gcloud app deploy --quiet
         ```
-    
+ 
+### Deploy on Google Cloud Platform using PowerShell script
+Right-click on [GAE_Deploy.ps1](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/blob/master/GAE_Deploy.ps1), select Run with Powershell.
+   
 # How to modify static content?
 The websites is coded in the way that you can easily modify the content by:
 * Edit xml files from [here](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/tree/master/src/static/xml "xml folder")
