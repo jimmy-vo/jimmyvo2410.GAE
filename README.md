@@ -12,15 +12,25 @@ This is a demonstration of deploying a website on Google Cloud Platform using mu
 ## Demonstration:
 You can find a demonstration link from [here](https://jimmyvo2410.appspot.com/)
 * Google Cloud Platform Dashboard: 
+
     ![photo](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/blob/master/doc/dashboard.JPG)
+    
 * Profile: 
+
     ![photo](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/blob/master/doc/profile.JPG)
+    
 * Project: 
+
     ![photo](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/blob/master/doc/project.JPG)
+    
 * Contact: 
+
     ![photo](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/blob/master/doc/contact.JPG)
+    
 * Automate deployment process: 
+
     ![photo](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/blob/master/doc/deploy.JPG)
+    
 
 
 ## Deployment Instruction
