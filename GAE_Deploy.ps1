@@ -39,11 +39,18 @@ pip install -t lib -r requirements.txt
 # . env/bin/activate
 
 #start to deploy
-gcloud app deploy --stop-previous-version --project=$PROJECT --version=$VERSION --quiet
+gcloud app deploy --project=$PROJECT --version=$VERSION --quiet
 
-#delete folder
-cd $loc_project
-Remove-Item -Recurse -Force -path $loc_tmp -ErrorAction SilentlyContinue
 
 #start to deploy
 gcloud app browse --project=$PROJECT
+
+#delete folder
+cd ..
+while (Test-Path $loc_tmp) { 
+    Start-Sleep 1 
+    echo "try to delete $loc_tmp"
+    Remove-Item -Recurse -Force -path $loc_tmp -ErrorAction SilentlyContinue
+}
+
+Pause
