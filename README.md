@@ -35,10 +35,41 @@ You can find a demonstration link from [here](https://portfolio-227204.appspot.c
 ### Deploy on Google Cloud Platform
  * Open Cloud Shell
  * Create Demo folder on the Cloud Shell Editor
- * Copy the list of folders to Demo folder:
-    * static
-
-
+ * Copy the list of items to Demo folder:
+    * [src/static](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/tree/master/src/static)
+    * [src/templates](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/tree/master/src/templates)
+    * [src/app.yaml](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/blob/master/src/app.yaml)
+    * [src/appengine_config.py](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/blob/master/src/appengine_config.py)
+    * [src/main.py](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/blob/master/src/main.py)
+    * [src/requirements.txt](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/blob/master/src/requirements.txt)
+ * On Cloud Shell Terminal
+    * Navigate to Demo folder:
+        ```
+        cd Demo
+        ```
+    * Initialize Google App Engine
+        ```
+        gcloud app create 
+        ```
+        Select server by inputting the associated number.
+    * Setup virtual environment
+        ```
+        virtualenv --python python env
+        ```
+    * Install required library
+        ```
+        pip install -t lib -r requirements.txt
+        ```
+    * Active Python
+        ```
+        . env/bin/activate
+        ```
+        ```
+    * Finally, Upload files to Google Cloud Storage
+        ```
+        gcloud app deploy --quiet
+        ```
+    
 # How to modify static content?
 The websites is coded in the way that you can easily modify the content by:
 * Edit xml files from [here](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/tree/master/src/static/xml "xml folder")
