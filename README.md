@@ -11,11 +11,16 @@ This is a demonstration of deploying a website on Google Cloud Platform using mu
 
 ## Demonstration:
 You can find a demonstration link from [here](https://jimmyvo2410.appspot.com/)
-* Google Cloud Platform Dashboard: ![photo](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/blob/master/doc/dashboard.JPG)
-* Profile: ![photo](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/blob/master/doc/profile.JPG)
-* Project: ![photo](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/blob/master/doc/project.JPG)
-* Contact: ![photo](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/blob/master/doc/contact.JPG)
-* Automate deployment process: ![photo](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/blob/master/doc/deploy.JPG)
+* Google Cloud Platform Dashboard: 
+    ![photo](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/blob/master/doc/dashboard.JPG)
+* Profile: 
+    ![photo](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/blob/master/doc/profile.JPG)
+* Project: 
+    ![photo](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/blob/master/doc/project.JPG)
+* Contact: 
+    ![photo](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/blob/master/doc/contact.JPG)
+* Automate deployment process: 
+    ![photo](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/blob/master/doc/deploy.JPG)
 
 
 ## Deployment Instruction
@@ -27,7 +32,7 @@ You can find a demonstration link from [here](https://jimmyvo2410.appspot.com/)
 ### Deploy locally using Pycharm
  * Open Pycharm 
    * Open New Project
-   * Navigate to [BlogsDemo](https://github.com/jimmyvo2410/Portfolio-GCP-Flask) folder
+   * Navigate to [Project](https://github.com/jimmyvo2410/Portfolio-GCP-Flask) folder
  * Configure Interpreter
    * In Pycharm, select File > Settings.. 
    * In Settings, on the left pannel, select Project:BlogsDemo > Project Interpreter. Navigate to [env/Scripts/python.exe](https://github.com/jimmyvo2410/Portfolio-GCP-Flask/blob/master/env/Scripts/python.exe)  
