@@ -19,9 +19,16 @@ def contact():
     return render_template('contact.html')
 
 
+@app.route('/p/project.html')
 @app.route('/project.html')
 def project():
     return render_template('project.html')
+
+
+@app.route('/error', defaults={'Code': 'null'})
+@app.route('/error/<Code>')
+def error(Code):
+    return render_template("error.html", errorCode=Code)
 
 
 @app.route('/header.html')
@@ -33,10 +40,6 @@ def header():
 def footer():
     return render_template('footer.html')
 
-
-@app.route('/error/<Code>')
-def error(Code):
-    return render_template('error.html', errorCode=Code)
 
 
 # @app.errorhandler(404)
