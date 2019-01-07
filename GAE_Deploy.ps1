@@ -1,7 +1,7 @@
 ﻿#configuration
 $VERSION="20181230t012741"
 $PROJECT = "jimmyvo2410"
-$loc_project = "D:\Github\Portfolio-GCP-Flask"
+$loc_project = "D:\Github\jimmyvo2410.GAE"
 $loc_tmp = "Deploy"
 $loc_src_folders = @("static", "templates")
 $loc_src_files = @("app.yaml", "appengine_config.py", "main.py", "requirements.txt")

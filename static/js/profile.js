@@ -7,7 +7,7 @@
  function addEducation(input, iD)
 {
 	var xml = input.getElementsByTagName('bullet');
-	for (var i=0; i<xml.length; i++)
+	for (var i = xml.length - 1; i >= 0; i--) 
 	{
 	    var item = xml[i];  
 
@@ -53,7 +53,7 @@
 function addAward(input, iD)
 {
 	var xml = input.getElementsByTagName('bullet');  
-	for (var i=0; i<xml.length; i++)
+	for (var i = xml.length - 1; i >= 0; i--) 
 	{
 	    var item = xml[i];  
 
@@ -101,7 +101,7 @@ function addAward(input, iD)
 function addSkill(input, iD)
 {
 	var xml = input.getElementsByTagName('area');
-	for (var i=0; i<xml.length; i++)
+	for (var i = xml.length - 1; i >= 0; i--) 
 	{
 	    var item = xml[i];  
 
@@ -164,8 +164,9 @@ function addSummary(input, iD)
  */
 function addExperience(input, iD)
 {
-	var xml = input.getElementsByTagName('bullet');
-	for (var i=0; i<xml.length; i++)
+	var xml = input.getElementsByTagName('bullet');	
+
+	for (var i = xml.length - 1; i >= 0; i--) 
 	{
 	    var item = xml[i];  
 
@@ -229,10 +230,10 @@ function addExperience(input, iD)
 document.addEventListener("DOMContentLoaded", function() {	
 	var resume_xml = loadXML("../static/xml/profile.xml");
 
-	addSummary(resume_xml.getElementsByTagName('summary')[0],'summary');
-	addEducation(resume_xml.getElementsByTagName('education')[0], 'education');
-	addAward(resume_xml.getElementsByTagName('award')[0], 'award');
-	addSkill(resume_xml.getElementsByTagName('skill')[0], 'skill');
-	addExperience(resume_xml.getElementsByTagName('experience')[0], 'experience');
-	addExperience(resume_xml.getElementsByTagName('volunteer')[0], 'volunteer');
+	addSummary(resume_xml.getElementsByTagName('summary')[1],'summary');
+	addEducation(resume_xml.getElementsByTagName('education')[1], 'education');
+	addAward(resume_xml.getElementsByTagName('award')[1], 'award');
+	addSkill(resume_xml.getElementsByTagName('skill')[1], 'skill');
+	addExperience(resume_xml.getElementsByTagName('experience')[1], 'experience');
+	addExperience(resume_xml.getElementsByTagName('volunteer')[1], 'volunteer');
 });
