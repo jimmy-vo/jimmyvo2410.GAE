@@ -1,9 +1,10 @@
 import os
 
 import werkzeug
-from flask import Flask, render_template, request, redirect, url_for, session
+from flask import Flask, render_template, request, redirect, url_for, session, abort
 
 app = Flask(__name__)
+
 
 
 @app.route('/')
@@ -25,12 +26,6 @@ def project():
     return render_template('project.html')
 
 
-@app.route('/error', defaults={'Code': 'null'})
-@app.route('/error/<Code>')
-def error(Code):
-    return render_template("error.html", errorCode=Code)
-
-
 @app.route('/header.html')
 def header():
     return render_template('header.html')
@@ -40,12 +35,19 @@ def header():
 def footer():
     return render_template('footer.html')
 
+@app.errorhandler(Exception)
+def error_internal_server(e):
+    return render_template("error.html", errorCode=e)
 
 
-# @app.errorhandler(404)
-# def page_not_found(e):
-#     # note that we set the 404 status explicitly
-#     return render_template('404.html'), 404
+@app.route('/e404')
+def e404():
+    abort(404)
+
+
+@app.route('/e500')
+def e500():
+    abort(500)
 
 
 if __name__ == "__main__":
