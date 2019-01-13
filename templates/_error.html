@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 	<head>
     	<meta charset="utf-8">
@@ -11,10 +11,10 @@
 	</head>
 	<body>
 		<img id="background" src="../static/images/wall.jpg" alt="avt">
-		<header id="layout_top"></header>
+		<header id="layout_header"></header>
 
-		<div id="layout">
-			<article id="layout_content">
+		<div id="layout_body">
+			<article id="layout_body_content">
 				<div id="listContact">
 					<h6>Please try below options:</h6>
 					<ul>
@@ -24,10 +24,10 @@
 				</div>
 			</article>
 
-			<footer id="footer"></footer>
+			<footer id="layout_footer"></footer>
 		</div>		
 		
-		<h1 id="headerContent">{{ errorCode }}</h1>
-		<h1 id="headerNum">-1</h1>
+		<h1 id="hidden_header">{{ errorCode }}</h1>
+		<h1 id="hidden_pageno">-1</h1>
 	</body>
 </html>

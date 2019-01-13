@@ -6,7 +6,6 @@ from flask import Flask, render_template, request, redirect, url_for, session, a
 app = Flask(__name__)
 
 
-
 @app.route('/')
 @app.route('/index.html')
 @app.route('/resume.html')
@@ -20,24 +19,24 @@ def contact():
     return render_template('contact.html')
 
 
-@app.route('/p/project.html')
 @app.route('/project.html')
 def project():
     return render_template('project.html')
 
 
-@app.route('/header.html')
+@app.route('/_t_header.html')
 def header():
-    return render_template('header.html')
+    return render_template('_t_header.html')
 
 
-@app.route('/footer.html')
+@app.route('/_t_footer.html')
 def footer():
-    return render_template('footer.html')
+    return render_template('_t_footer.html')
+
 
 @app.errorhandler(Exception)
 def error_internal_server(e):
-    return render_template("error.html", errorCode=e)
+    return render_template("_error.html", errorCode=e)
 
 
 @app.route('/e404')
