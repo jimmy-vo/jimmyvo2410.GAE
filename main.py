@@ -1,52 +1,103 @@
 import os
+import mw_email
+from flask import Flask, render_template, request
+from mw_email import FlaskEmail, JetEmail
 
-import werkzeug
-from flask import Flask, render_template, request, redirect, url_for, session, abort
+
+# 20190113
+var_emailtarget = 'jimmy.vo.2410@gmail.com'
+var_emailuser = 'jimmy.vo.2410.gae@gmail.com'
+var_password = 'dsadasdsadsadsadasdasd!@#$%^&dasdasdasdas'
 
 app = Flask(__name__)
+# email_app = MwEmail(app, var_emailuser, var_password)
+email_app = JetEmail(   sender=var_emailtarget,
+                        api_key='34d299191b225ca4fe1670cd4cb251ba',
+                        api_secret='b26bbefb2b727a49619e4019b3c3fdbe')
 
 
 @app.route('/')
 @app.route('/index.html')
+@app.route('/index')
+@app.route('/resume')
 @app.route('/resume.html')
+@app.route('/profile')
 @app.route('/profile.html')
 def profile():
     return render_template('profile.html')
 
 
-@app.route('/contact.html')
-def contact():
-    return render_template('contact.html')
+@app.route('/contact', methods=['POST', 'GET'])
+@app.route('/contact.html', methods=['POST', 'GET'])
+def contact(script='', fullname='', address='', number='', email='', textarea=''):
+    if request.method == 'POST':
+        fullname = request.form['fullname']
+        address = request.form['address']
+        number = request.form['number']
+        email = request.form['email']
+        textarea = request.form['textarea']
+
+        info = 'informoation:\n'
+        info += ' - Full Name: ' + fullname + '\n'
+        info += ' - Email: ' + email + '\n'
+        info += ' - Address: ' + address + '\n'
+        info += ' - Phone Number: ' + number + '\n' + '\n'
+        info += ' - Message: ' + textarea + '\n'
+
+        # Try to send an email for verification
+        if not email_app.send(recipients=email,
+                              sender=email,
+                              subject='[jimmyvo2410.appspot.com] - Confirmation: ' + fullname,
+                              body='We have received your ' + info):
+            script = '$(document).ready(function() { ' \
+                     'alert(\'There was a problem while validating your email. ' \
+                     'Please make sure that your info is correct and try again. ' \
+                     'Or you can email to me: ' + var_emailtarget + ' (is copied to your clipboard).\');' \
+                     'copyStringToClipboard(\'' + var_emailtarget + '\');' \
+                     '});'
+
+        elif email_app.send(    recipients=var_emailtarget,
+                                sender=var_emailuser,
+                                subject='[jimmyvo2410.appspot.com] - ' + fullname,
+                                body='Hello Jimmy,\n\nYou have a message from ' + fullname + ' with their ' + info + ': \n' + textarea):
+            script = '$(document).ready(function() { alert(\'your message has been sent successfully !\');});'
+        else:
+            script = '$(document).ready(function() { ' \
+                     'alert(\'There was an unexpected problem while sending message. ' \
+                     'Please make sure that your info is correct and try again. ' \
+                     'Or you can email to me: ' + var_emailtarget + ' (is copied to your clipboard).\');' \
+                     'copyStringToClipboard(\'' + var_emailtarget + '\');' \
+                     '});'
+
+    return render_template('_contact.html', script=script,
+                                            fullname=fullname,
+                                            address=address,
+                                            number=number,
+                                            email=email,
+                                            textarea=textarea)
 
 
+@app.route('/project')
 @app.route('/project.html')
 def project():
     return render_template('project.html')
 
 
+@app.route('/_t_header')
 @app.route('/_t_header.html')
 def header():
     return render_template('_t_header.html')
 
 
+@app.route('/_t_footer')
 @app.route('/_t_footer.html')
 def footer():
     return render_template('_t_footer.html')
 
 
-@app.errorhandler(Exception)
-def error_internal_server(e):
-    return render_template("_error.html", errorCode=e)
-
-
-@app.route('/e404')
-def e404():
-    abort(404)
-
-
-@app.route('/e500')
-def e500():
-    abort(500)
+# @app.errorhandler(Exception)
+# def error_internal_server(e):
+#     return render_template("_error.html", errorCode=e)
 
 
 if __name__ == "__main__":
