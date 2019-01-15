@@ -4,23 +4,22 @@ from flask_mail import Mail, Message
 
 
 class JetEmail:
-    def __init__(self, sender, api_key, api_secret):
+    def __init__(self, api_key, api_secret):
         requests_toolbelt.adapters.appengine.monkeypatch()
-        self.sender = sender
         self.client = mailjet_rest.Client(
             auth=(api_key, api_secret), version='v3.1')
 
-    def send(self, recipients='', reply_to='', sender='', subject='', body=''):
+    def send(self, recipients='', recipients_name='unknown', sender='',sender_name='unknown', subject='', body=''):
         try:
             data = {
                 'Messages': [{
                     "From": {
-                        "Email": self.sender,
-                        "Name": 'host'
+                        "Email": sender,
+                        "Name": sender_name
                     },
                     "To": [{
                             "Email": recipients,
-                            "Name": 'unknown'
+                            "Name": recipients_name
                     }],
                     "Subject": subject,
                     "TextPart": body

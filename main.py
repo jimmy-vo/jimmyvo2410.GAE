@@ -11,9 +11,8 @@ var_password = 'dsadasdsadsadsadasdasd!@#$%^&dasdasdasdas'
 
 app = Flask(__name__)
 # email_app = MwEmail(app, var_emailuser, var_password)
-email_app = JetEmail(   sender=var_emailtarget,
-                        api_key='34d299191b225ca4fe1670cd4cb251ba',
-                        api_secret='b26bbefb2b727a49619e4019b3c3fdbe')
+email_app = JetEmail(api_key='34d299191b225ca4fe1670cd4cb251ba',
+                     api_secret='b26bbefb2b727a49619e4019b3c3fdbe')
 
 
 @app.route('/')
@@ -37,37 +36,42 @@ def contact(script='', fullname='', address='', number='', email='', textarea=''
         email = request.form['email']
         textarea = request.form['textarea']
 
-        info = 'informoation:\n'
+        info = 'information:\n'
         info += ' - Full Name: ' + fullname + '\n'
         info += ' - Email: ' + email + '\n'
         info += ' - Address: ' + address + '\n'
-        info += ' - Phone Number: ' + number + '\n' + '\n'
+        info += ' - Phone Number: ' + number + '\n'
         info += ' - Message: ' + textarea + '\n'
 
         # Try to send an email for verification
         if not email_app.send(recipients=email,
-                              sender=email,
+                              recipients_name=fullname,
+                              sender=var_emailuser,
+                              sender_name='Js bot',
                               subject='[jimmyvo2410.appspot.com] - Confirmation: ' + fullname,
-                              body='We have received your ' + info):
+                              body='Dear ' + fullname + ', \n\nWe have received your ' + info + '\n\nThis is an automated message do not reply.\n\nThanks,'):
             script = '$(document).ready(function() { ' \
                      'alert(\'There was a problem while validating your email. ' \
                      'Please make sure that your info is correct and try again. ' \
-                     'Or you can email to me: ' + var_emailtarget + ' (is copied to your clipboard).\');' \
-                     'copyStringToClipboard(\'' + var_emailtarget + '\');' \
                      '});'
 
-        elif email_app.send(    recipients=var_emailtarget,
+        elif not email_app.send(recipients=var_emailtarget,
+                                recipients_name='Jimmy Vo',
                                 sender=var_emailuser,
+                                sender_name='Js bot',
                                 subject='[jimmyvo2410.appspot.com] - ' + fullname,
-                                body='Hello Jimmy,\n\nYou have a message from ' + fullname + ' with their ' + info + ': \n' + textarea):
-            script = '$(document).ready(function() { alert(\'your message has been sent successfully !\');});'
-        else:
+                                body='Hello Jimmy,\n\nYou have a message from ' + fullname + ' with their ' + info):
             script = '$(document).ready(function() { ' \
                      'alert(\'There was an unexpected problem while sending message. ' \
                      'Please make sure that your info is correct and try again. ' \
-                     'Or you can email to me: ' + var_emailtarget + ' (is copied to your clipboard).\');' \
-                     'copyStringToClipboard(\'' + var_emailtarget + '\');' \
                      '});'
+        else:
+            script = '$(document).ready(function() { alert(\'your message has been sent successfully !\');});'
+            fullname = ''
+            address = ''
+            number = ''
+            email = ''
+            textarea = ''
 
     return render_template('_contact.html', script=script,
                                             fullname=fullname,
@@ -95,9 +99,9 @@ def footer():
     return render_template('_t_footer.html')
 
 
-# @app.errorhandler(Exception)
-# def error_internal_server(e):
-#     return render_template("_error.html", errorCode=e)
+@app.errorhandler(Exception)
+def error_internal_server(e):
+    return render_template("_error.html", errorCode=e)
 
 
 if __name__ == "__main__":
