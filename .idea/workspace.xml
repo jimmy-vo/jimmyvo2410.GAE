@@ -3,71 +3,44 @@
   <component name="ChangeListManager">
     <list default="true" id="64c91803-f9a0-4415-8725-74927957e5c7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mw_email.py" beforeDir="false" afterPath="$PROJECT_DIR$/mw_email.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/blog.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/project.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/project.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/meta/contact.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/meta/profile.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/meta/project.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/png/001-twitter-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/png/002-facebook-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/png/003-linkedin-sign.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/png/004-github-sign.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/png/011-email.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/thumb/24-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/thumb/GreatWestLife.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/thumb/HCMUT.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/thumb/MS.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/thumb/NMM.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/thumb/PatersonGlobalFoods.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/thumb/PrairieDevCon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/thumb/RRC.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/thumb/VietSkyLine.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/thumb/disrupted.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/thumb/hella.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/blog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/project.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/project.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/js/utility.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/utility.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/xml/blog.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/_t_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_t_footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/_t_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_t_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/project.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1071508747">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="8" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="5" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="9" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="3" />
-          <entry key="html" value="140" />
-          <entry key="js" value="1" />
-          <entry key="py" value="3250" />
-          <entry key="txt" value="12" />
-          <entry key="yaml" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="HTML" value="140" />
-          <entry key="JavaScript" value="1" />
-          <entry key="PLAIN_TEXT" value="15" />
-          <entry key="Python" value="3250" />
-          <entry key="YAML" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="html" value="19" />
-          <entry key="js" value="6" />
-          <entry key="py" value="21" />
-          <entry key="txt" value="2" />
-          <entry key="yaml" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="HTML" value="19" />
-          <entry key="JavaScript" value="6" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="21" />
-          <entry key="YAML" value="2" />
-        </counts>
-      </usages-collector>
-    </session>
   </component>
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.57591975">
@@ -76,12 +49,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="65" column="83" selection-start-line="65" selection-start-column="83" selection-end-line="65" selection-end-column="83" />
-                  <folding>
-                    <element signature="e#0#9#0" expanded="true" />
-                    <marker date="1547524066285" expanded="true" signature="3938:3939" ph="..." />
-                  </folding>
+                <state relative-caret-position="1072">
+                  <caret line="100" selection-start-line="100" selection-end-line="100" />
                 </state>
               </provider>
             </entry>
@@ -98,8 +67,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/templates/contact.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1445">
-                  <caret line="85" column="28" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
+                <state relative-caret-position="1479">
+                  <caret line="87" column="28" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
                 </state>
               </provider>
             </entry>
@@ -116,8 +85,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/requirements.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+                <state relative-caret-position="17">
+                  <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -190,17 +159,18 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-182" />
-    <option name="y" value="-13" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1913" />
+    <option name="y" value="525" />
     <option name="width" value="974" />
-    <option name="height" value="1057" />
+    <option name="height" value="532" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -217,7 +187,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -293,10 +262,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="1913" y="525" width="974" height="532" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21232876" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.43055555" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Project Explorer" order="2" weight="0.32982087" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -304,7 +273,7 @@
       <window_info id="Job Explorer" order="5" weight="0.32982087" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.472103" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.47117794" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39914164" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -319,9 +288,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -526,8 +492,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1445">
-          <caret line="85" column="28" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
+        <state relative-caret-position="1479">
+          <caret line="87" column="28" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -540,8 +506,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        <state relative-caret-position="17">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -560,12 +526,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="65" column="83" selection-start-line="65" selection-start-column="83" selection-end-line="65" selection-end-column="83" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1547524066285" expanded="true" signature="3938:3939" ph="..." />
-          </folding>
+        <state relative-caret-position="1072">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
         </state>
       </provider>
     </entry>

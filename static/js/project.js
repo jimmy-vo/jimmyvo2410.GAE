@@ -7,6 +7,9 @@
  * param count
  * return  none
  */
+var lightboxClass = 'lightbox';
+
+
 function AddItem(title, link, images, count) 
 {
 	var element_li = document.createElement("li"); 
@@ -15,32 +18,34 @@ function AddItem(title, link, images, count)
 	{
 		var element_a = createTextElement("a", title);  
 		element_a.href = link;
+		element_a.classList.add('font-title');
 		element_li.appendChild(element_a);
 	}
 	else
 	{
-		element_li.appendChild(createTextElement("h1", title));
+		var element_h1 = createTextElement("a", title);  
+		element_h1.classList.add('font-title');
+		element_li.appendChild(element_h1);
 	}
-
 
 	if (images != null)
 	{
 		var element_img  = document.createElement("img"); 
-		var	url = "../static/images/thumb/"+ images + ".jpg";
-		element_img.src = url;
+		var	url_thb = "../static/images/thumb/"+ images + ".jpg";
+		element_img.src = url_thb;
 		element_img.alt = images +  ".jpg";
 
-		TooltipImageEvent(element_img, url);
+		var element_a  = document.createElement("a"); 
+		var	url_org = "../static/images/large/"+ images + ".jpg";
+		element_a.href = url_org;
+		element_a.classList.add(lightboxClass);
 
-		element_li.appendChild(element_img);
+		TooltipImageEvent(element_img, url_org);
+		element_a.appendChild(element_img);
+		element_li.appendChild(element_a);
 	}
 
-
 	document.getElementById("project").appendChild(element_li);
-
-
-	if(count%2 !== 0)
-		element_li.classList.add("zebra_background");
 
 	return element_li;
 }
@@ -56,7 +61,9 @@ function AddDescription(element_li, topic, bullet)
 {
 	for (var i = 0; i<topic.length; i++) 
 	{
-		element_li.appendChild(createTextElement("h2", topic[i]));
+		var element_h2 = createTextElement("h2", topic[i]); 
+		element_h2.classList.add('font-normal');
+		element_li.appendChild(element_h2);
 	}
 
 	if (bullet.length>0) 
@@ -65,10 +72,12 @@ function AddDescription(element_li, topic, bullet)
 		element_li.appendChild(element_ul);
 		for (var i = 0; i<bullet.length; i++) 
 		{
-			element_ul.appendChild(createTextElement("li", bullet[i]));
+			var element_li1 = createTextElement("li", bullet[i]); 
+			element_li1.classList.add('font-bullet');
+			element_ul.appendChild(element_li1);
 		}
 	}
-	
+		
 }
 
 
@@ -102,4 +111,6 @@ document.addEventListener("DOMContentLoaded", function(){
 		}
 
 	}
+
+   	new LuminousGallery(document.getElementsByClassName(lightboxClass));
 });
