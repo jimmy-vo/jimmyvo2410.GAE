@@ -1,16 +1,7 @@
-/*
- * AddItem
- *
- * param date
- * param description
- * param images
- * param count
- * return  none
- */
 var lightboxClass = 'lightbox';
 
 
-function AddItem(title, link, images, count) 
+function AddItem(title, link, images) 
 {
 	var element_li = document.createElement("li"); 
 
@@ -44,19 +35,13 @@ function AddItem(title, link, images, count)
 		element_a.appendChild(element_img);
 		element_li.appendChild(element_a);
 	}
+	
 
 	document.getElementById("project").appendChild(element_li);
-
 	return element_li;
 }
 
-/*
- * AddDescription
- *
- * param element_li
- * param topic
- * param bullet
- */
+
 function AddDescription(element_li, topic, bullet) 
 {
 	for (var i = 0; i<topic.length; i++) 
@@ -77,7 +62,7 @@ function AddDescription(element_li, topic, bullet)
 			element_ul.appendChild(element_li1);
 		}
 	}
-		
+
 }
 
 
@@ -108,6 +93,10 @@ document.addEventListener("DOMContentLoaded", function(){
 				bullet[l] = subitem.getElementsByTagName('bullet')[l].firstChild.nodeValue;
 			}
 			AddDescription(element_li, topic, bullet) 
+			
+			// var element_clear =  createTextElement("p", "");
+			// element_clear.style.clear = 'both';
+			// element_li.appendChild(element_clear);	
 		}
 
 	}

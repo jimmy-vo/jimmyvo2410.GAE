@@ -9,13 +9,6 @@
     padding: 0;
 }
 
-#layout_body_content>ul>li{    
-    width: 100%;
-    float: left;
-    border-radius:  15px;
-    margin: 20px 0px;
-    padding-bottom: 15px;
-}
 
 #layout_body_content>ul>li>ul
 {    
@@ -26,7 +19,10 @@
     padding: 0px;
 }
 
-
+.lightbox 
+{    
+    float: right;
+}
 
 
 .lightbox img:hover {
@@ -34,7 +30,6 @@
 }
 
 .lightbox img {
-    float: right;
     object-fit: cover;
     width: 256px;
     margin: 9px ;

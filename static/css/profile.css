@@ -1,26 +1,26 @@
-/* ##################################################################### */
-/* layout                                                                */
-/* ##################################################################### */
-
 #layout_body_content table
 {
     border: 0px groove  black   ;
     width: 98%;
-    margin: 5px 15px;  
+    margin: 0px;  
+	padding: 0px;
     border-collapse: collapse;
 }
 
 #layout_body_content tr 
 {
+    margin: 0px;  
+    padding: 0px;
     border: 0px solid  black   ;
 }
 
-#layout_body_content  td
+#layout_body_content tr td
 {
 	width: 	100%;
     vertical-align: top;
     border-bottom: 2px solid  black   ;
-    padding: 10px 5px ;
+    margin: 0px;  
+	padding: 5px 0px;
 }
 
 #layout_body_content  tr:last-child td
@@ -37,47 +37,31 @@
     border-radius:  15px;
 }
 
-.font-title
+#skill .font-topic
 {
-    background: linear-gradient(rgb(10 ,11,29), rgb(72,104,127), rgb(10 ,11,29));
-    padding: 5px 30px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border: 1px groove  black   ;
-    margin: 1px;
-    display: block;
+	display: block;
+	float: none;
 }
 
 .font-topic
 {
-    margin-right:   30px;
     float:  left;   
 }
 
 .font-date
 {
     float: right;
-    text-align: right;
-    margin-right: 5px;
-    margin-top: 5px;
 }
 
 
 .font-detail
 {
-    margin-left: 25px;
-    margin-top: 10px;
-    font-size: 16px; 
     clear: both;
     float: left;
 }
 
 .font-normal
 {
-    margin-top: 10px;
-    padding: 5px;
     clear: both;
 }
 

@@ -12,7 +12,8 @@ var_password = 'dsadasdsadsadsadasdasd!@#$%^&dasdasdasdas'
 app = Flask(__name__)
 # email_app = MwEmail(app, var_emailuser, var_password)
 email_app = JetEmail(api_key='34d299191b225ca4fe1670cd4cb251ba',
-                     api_secret='b26bbefb2b727a49619e4019b3c3fdbe')
+                     api_secret='b26bbefb2b727a49619e4019b3c3fdbe',
+                     email_host=var_emailtarget)
 
 
 @app.route('/')
@@ -26,59 +27,78 @@ def profile():
     return render_template('profile.html')
 
 
+global email_list
+
+
 @app.route('/contact', methods=['POST', 'GET'])
 @app.route('/contact.html', methods=['POST', 'GET'])
-def contact(script='', fullname='', address='', number='', email='', textarea=''):
+def contact(notification='', fullname='', address='', number='', email='', message=''):
     if request.method == 'POST':
         fullname = request.form['fullname']
         address = request.form['address']
         number = request.form['number']
         email = request.form['email']
-        textarea = request.form['textarea']
+        message = request.form['message']
 
         info = 'information:\n'
         info += ' - Full Name: ' + fullname + '\n'
         info += ' - Email: ' + email + '\n'
         info += ' - Address: ' + address + '\n'
         info += ' - Phone Number: ' + number + '\n'
-        info += ' - Message: ' + textarea + '\n'
+        info += ' - Message: ' + message + '\n'
 
+        sent_count = email_app.count_sent(email)
+        trial_count = email_app.count_trial(email)
+
+        email_app.mark_email_trial(email)
+
+        if sent_count > 0:
+            notification = "<p class=\'failure\'>" \
+                           "Your message was sent! If you insist, please come back tomorrow to send another one." \
+                           "</p>"
+        elif trial_count > 3:
+            notification = "<p class=\'failure\'>" \
+                           "You have tried " + str(trial_count) + " times but it didn't work out. " \
+                           "Please send me an email to " + \
+                           var_emailtarget + "." \
+                           "</p>"
         # Try to send an email for verification
-        if not email_app.send(recipients=email,
+        elif not email_app.send(recipients=email,
                               recipients_name=fullname,
                               sender=var_emailuser,
                               sender_name='Js bot',
                               subject='[jimmyvo2410.appspot.com] - Confirmation: ' + fullname,
-                              body='Dear ' + fullname + ', \n\nWe have received your ' + info + '\n\nThis is an automated message do not reply.\n\nThanks,'):
-            script = '$(document).ready(function() { ' \
-                     'alert(\'There was a problem while validating your email. ' \
-                     'Please make sure that your info is correct and try again. ' \
-                     '});'
-
+                              body='Dear ' + fullname + ', \n\nWe have received your ' + info +
+                                   '\n\nThis is an automated message do not reply.\n\nThanks,'):
+            notification = "<p class=\'failure\'>" \
+                           "There was a problem while validating your email. " \
+                           "Please make sure that your info is correct." \
+                           "</p>"
         elif not email_app.send(recipients=var_emailtarget,
                                 recipients_name='Jimmy Vo',
                                 sender=var_emailuser,
                                 sender_name='Js bot',
                                 subject='[jimmyvo2410.appspot.com] - ' + fullname,
                                 body='Hello Jimmy,\n\nYou have a message from ' + fullname + ' with their ' + info):
-            script = '$(document).ready(function() { ' \
-                     'alert(\'There was an unexpected problem while sending message. ' \
-                     'Please make sure that your info is correct and try again. ' \
-                     '});'
+            notification = "<p class=\'failure\'>" \
+                           "There was an unexpected problem while sending message. Please send me an email to " + \
+                           var_emailtarget + "." \
+                           "</p>"
         else:
-            script = '$(document).ready(function() { alert(\'your message has been sent successfully !\');});'
+            notification = "<p class=\'succeed\'>Your message has been sent successfully !</p>"
+            email_app.mark_email_sent(email)
             fullname = ''
             address = ''
             number = ''
             email = ''
-            textarea = ''
+            message = ''
 
-    return render_template('_contact.html', script=script,
+    return render_template('_contact.html', notification=notification,
                                             fullname=fullname,
                                             address=address,
                                             number=number,
                                             email=email,
-                                            textarea=textarea)
+                                            message=message)
 
 
 @app.route('/project')
@@ -87,16 +107,16 @@ def project():
     return render_template('project.html')
 
 
-@app.route('/_t_header')
-@app.route('/_t_header.html')
+@app.route('/header')
+@app.route('/header.html')
 def header():
-    return render_template('_t_header.html')
+    return render_template('header.html')
 
 
-@app.route('/_t_footer')
-@app.route('/_t_footer.html')
+@app.route('/footer')
+@app.route('/footer.html')
 def footer():
-    return render_template('_t_footer.html')
+    return render_template('footer.html')
 
 
 @app.errorhandler(Exception)
