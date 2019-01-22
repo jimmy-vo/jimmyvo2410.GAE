@@ -35,7 +35,6 @@ global email_list
 def contact(notification='', fullname='', address='', number='', email='', message=''):
     if request.method == 'POST':
         fullname = request.form['fullname']
-        address = request.form['address']
         number = request.form['number']
         email = request.form['email']
         message = request.form['message']
@@ -43,7 +42,6 @@ def contact(notification='', fullname='', address='', number='', email='', messa
         info = 'information:\n'
         info += ' - Full Name: ' + fullname + '\n'
         info += ' - Email: ' + email + '\n'
-        info += ' - Address: ' + address + '\n'
         info += ' - Phone Number: ' + number + '\n'
         info += ' - Message: ' + message + '\n'
 

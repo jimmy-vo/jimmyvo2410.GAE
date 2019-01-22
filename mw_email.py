@@ -24,7 +24,6 @@ class JetEmail:
             self.sent_email_list = []
             self.tick_sent = time.time()
 
-
     def mark_email_sent(self, email):
         self.sent_email_list.append(email)
 
