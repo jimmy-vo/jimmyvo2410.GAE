@@ -86,6 +86,7 @@ function ValidateMessage()
 	return false;
 }
 
+<<<<<<< HEAD
 document.addEventListener("DOMContentLoaded", function(){
 
 	$fullname = $("#fullname");
@@ -130,4 +131,14 @@ document.addEventListener("DOMContentLoaded", function(){
             e.preventDefault();
         }
  	});
+=======
+// Other event listeners can go here.
+document.addEventListener("DOMContentLoaded", function(){  		
+	document.getElementById("submit").addEventListener("click", validate);
+	document.getElementById("clear").addEventListener("click", resetForm);
+	document.getElementById("message").addEventListener("click", function () {
+		alert("It can't be use right now");
+	});
+	hideErrors();
+>>>>>>> parent of caf7af0... 20190114
 });

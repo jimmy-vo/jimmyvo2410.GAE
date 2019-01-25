@@ -12,7 +12,7 @@ $Path_FlashProject 		= "D:\Github\jimmyvo2410.GAE"
 $Path_Deploy 			= "Deploy"
 
 $Path_BuildFolders 		= @("static", "templates")
-$Path_BuildFiles 		= @("app.yaml", "appengine_config.py", "mw_email.py", "main.py", "requirements.txt")
+$Path_BuildFiles 		= @("app.yaml", "appengine_config.py", "main.py", "requirements.txt")
 
 # ########################################################################################
 # Update from static project (It may not work on your local machine)

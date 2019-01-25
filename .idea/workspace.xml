@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="64c91803-f9a0-4415-8725-74927957e5c7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/static/css/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/contact.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/images/large/201707(1).jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/images/large/201707(2).jpg" beforeDir="false" />
@@ -150,6 +151,28 @@
       <change beforePath="$PROJECT_DIR$/templates/_contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/blog.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/blog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/contact.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/project.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/project.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/file/Resume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/static/file/Resume.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/address.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/address.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/email.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/email.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/github.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/github.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/linkedin.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/linkedin.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/phone.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/phone.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/web.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/web.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/xml/profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/static/xml/profile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/header.html" beforeDir="false" />
+>>>>>>> parent of caf7af0... 20190114
       <change beforePath="$PROJECT_DIR$/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/project.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project.html" afterDir="false" />
     </list>
@@ -163,49 +186,78 @@
     <session id="-1071508747">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+<<<<<<< HEAD
           <entry key="project.closed" value="5" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="3" />
           <entry key="project.opened" value="5" />
+=======
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.opened" value="4" />
+>>>>>>> parent of caf7af0... 20190114
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+<<<<<<< HEAD
           <entry key="css" value="150" />
           <entry key="html" value="174" />
           <entry key="js" value="21" />
           <entry key="py" value="157" />
           <entry key="txt" value="1" />
+=======
+          <entry key="html" value="68" />
+          <entry key="py" value="47" />
+>>>>>>> parent of caf7af0... 20190114
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+<<<<<<< HEAD
           <entry key="CSS" value="150" />
           <entry key="HTML" value="174" />
           <entry key="JavaScript" value="21" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Python" value="157" />
+=======
+          <entry key="HTML" value="68" />
+          <entry key="Python" value="47" />
+>>>>>>> parent of caf7af0... 20190114
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+<<<<<<< HEAD
           <entry key="css" value="6" />
           <entry key="html" value="16" />
           <entry key="js" value="4" />
           <entry key="py" value="3" />
+=======
+          <entry key="html" value="3" />
+          <entry key="py" value="1" />
+>>>>>>> parent of caf7af0... 20190114
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+<<<<<<< HEAD
           <entry key="CSS" value="6" />
           <entry key="HTML" value="16" />
           <entry key="JavaScript" value="4" />
           <entry key="Python" value="3" />
+=======
+          <entry key="HTML" value="3" />
+          <entry key="Python" value="1" />
+>>>>>>> parent of caf7af0... 20190114
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/profile.html">
@@ -293,12 +345,24 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="155">
               <caret line="31" column="81" selection-start-line="31" selection-start-column="81" selection-end-line="31" selection-end-column="81" />
+=======
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="382">
+              <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+>>>>>>> parent of caf7af0... 20190114
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+<<<<<<< HEAD
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -339,14 +403,18 @@
       <replace>p</replace>
     </replaceStrings>
   </component>
+=======
+>>>>>>> parent of caf7af0... 20190114
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/app.yaml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/templates/error.html" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/templates/_error.html" />
         <option value="$PROJECT_DIR$/static/js/utility.js" />
         <option value="$PROJECT_DIR$/email.py" />
@@ -376,12 +444,26 @@
     <option name="y" value="256" />
     <option name="width" value="1366" />
     <option name="height" value="1028" />
+=======
+        <option value="$PROJECT_DIR$/templates/contact.html" />
+        <option value="$PROJECT_DIR$/templates/profile.html" />
+        <option value="$PROJECT_DIR$/main.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-27" />
+    <option name="y" value="5" />
+    <option name="width" value="1042" />
+    <option name="height" value="1057" />
+>>>>>>> parent of caf7af0... 20190114
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -415,19 +497,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Github\jimmyvo2410.GAE" />
-      <recent name="D:\Github\jimmyvo2410.GAE\templates" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -482,20 +557,14 @@
     </task>
     <servers />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <frame x="-27" y="5" width="1042" height="1057" extended-state="0" />
     <layout>
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12065332" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26095617" />
+>>>>>>> parent of caf7af0... 20190114
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Project Explorer" order="2" weight="0.32982087" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -503,14 +572,19 @@
       <window_info id="Job Explorer" order="5" weight="0.32982087" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" weight="0.20171674" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.36587983" />
+=======
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5048754" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39914164" />
+>>>>>>> parent of caf7af0... 20190114
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32939914" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Console" order="7" />
       <window_info anchor="bottom" id="DB Execution Console" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32939914" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32939914" />
@@ -527,18 +601,22 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
+<<<<<<< HEAD
           <line>36</line>
           <option name="timeStamp" value="1" />
+=======
+          <line>33</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="2" />
+>>>>>>> parent of caf7af0... 20190114
         </line-breakpoint>
       </breakpoints>
-      <default-breakpoints>
-        <breakpoint type="python-exception">
-          <properties notifyOnTerminate="true" exception="BaseException">
-            <option name="notifyOnTerminate" value="true" />
-          </properties>
-        </breakpoint>
-      </default-breakpoints>
     </breakpoint-manager>
+<<<<<<< HEAD
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="sent_email_list" />
@@ -583,6 +661,8 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
+=======
+>>>>>>> parent of caf7af0... 20190114
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -595,6 +675,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/templates/error.html" />
     <entry file="file://$PROJECT_DIR$/templates/blog.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -605,19 +686,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/blog.js" />
     <entry file="file://$PROJECT_DIR$/templates/_error.html">
+=======
+    <entry file="file://$PROJECT_DIR$/app.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        <state relative-caret-position="170">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/blog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2068">
+          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="231" column="38" lean-forward="true" selection-start-line="231" selection-start-column="38" selection-end-line="231" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/flask/app.py">
+>>>>>>> parent of caf7af0... 20190114
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20740">
+          <caret line="1249" selection-start-line="1249" selection-end-line="1249" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/static/js/utility.js">
+=======
+    <entry file="file://$PROJECT_DIR$/templates/error.html" />
+    <entry file="file://$PROJECT_DIR$/templates/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="59" column="30" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="30" />
+        <state relative-caret-position="1343">
+          <caret line="79" column="22" selection-start-line="79" selection-start-column="22" selection-end-line="79" selection-end-column="22" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/blog.html">
+>>>>>>> parent of caf7af0... 20190114
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/flask/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -626,12 +744,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/flask_mail.py">
+=======
+    <entry file="file://$PROJECT_DIR$/static/js/common.js">
+>>>>>>> parent of caf7af0... 20190114
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://C:/Program Files/Python27/Lib/smtplib.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1212">
@@ -724,11 +846,18 @@
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/templates/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+>>>>>>> parent of caf7af0... 20190114
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="1615">
           <caret line="98" selection-start-line="98" selection-end-line="98" />
         </state>
@@ -811,5 +940,15 @@
         </state>
       </provider>
     </entry>
+=======
+        <state relative-caret-position="382">
+          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+>>>>>>> parent of caf7af0... 20190114
   </component>
 </project>
